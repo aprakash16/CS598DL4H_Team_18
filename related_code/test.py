@@ -25,8 +25,8 @@ def round(num):
 def main():
   # Load data
   print('Load data...')
-  data = np.load(hp.data_dir + 'data_arrays.npz')
-  test_ids_patients = pd.read_pickle(hp.data_dir + 'test_ids_patients.pkl')
+  data = np.load(hp.data_dir_test + 'data_arrays.npz')
+  test_ids_patients = pd.read_pickle(hp.data_dir_test + 'test_ids_patients.pkl')
   
   # Patients in test data
   patients = test_ids_patients.drop_duplicates()
@@ -46,10 +46,10 @@ def main():
   net = Net(num_static, num_dp_codes, num_cp_codes).to(device)
   
   # Set log dir to read trained model from
-  logdir = hp.logdir + hp.net_variant + '/'
+  logdir = hp.logdir_test + hp.net_variant + '/'
 
   # Restore variables from disk
-  net.load_state_dict(torch.load(logdir + 'final_model.pt', map_location=device))
+  net.load_state_dict(torch.load(logdir_test + 'final_model.pt', map_location=device))
 
   # Bootstrapping
   np.random.seed(hp.np_seed)
@@ -139,7 +139,7 @@ def main():
   specificity_mean = np.mean(specificity_vec)
   specificity_lci, specificity_uci = st.t.interval(0.95, hp.bootstrap_samples-1, loc=specificity_mean, scale=st.sem(specificity_vec))
 
-  epoch_times = np.load(hp.logdir + hp.net_variant + '/epoch_times.npz')['epoch_times']
+  epoch_times = np.load(hp.logdir_test + hp.net_variant + '/epoch_times.npz')['epoch_times']
   times_mean = np.mean(epoch_times)
   times_lci, times_uci = st.t.interval(0.95, len(epoch_times)-1, loc=np.mean(epoch_times), scale=st.sem(epoch_times))
   times_std = np.std(epoch_times)
