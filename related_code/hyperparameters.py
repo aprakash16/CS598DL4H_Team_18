@@ -10,7 +10,7 @@ class Hyperparameters:
   # data
   mimic_dir = './mimic-iii-clinical-database-1.4/'
   data_dir = './data/'
-  data_dir_test = './data-final'
+  data_dir_test = './data-final/'
   logdir = './logdir/' # log directory
   logdir_test = './logdir-final/' # log directory
 
