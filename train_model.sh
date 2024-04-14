@@ -8,6 +8,11 @@ modelName=""
 select opt in "${options[@]}"
 do
     case $opt in
+        "ODE + RNN + Attention")
+            model="ode_birnn_attention"
+            modelName=$opt
+            break
+            ;;
         "QUIT")
             exit 0
             ;;
