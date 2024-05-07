@@ -8,7 +8,7 @@ If you want to find out more about our reproduction study, please checkout the f
 1. Presentation: 
 2. Final Report: 
 
-# Scope of Reproducibility
+## Scope of Reproducibility
 
 The following hypotheses will be tested:
 
