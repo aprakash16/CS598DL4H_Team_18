@@ -22,7 +22,7 @@ Following ablations have been implemented in order to observe the impact of elim
 
 ## Environment
 
-Python 3.x has been used. The list of dependencies/packages can be found [here](https://github.com/aprakash16/CS598DL4H_Team_18/blob/main/related_code/requirements.txt).
+Python 3.x has been used. The list of dependencies/packages can be found [here] (https://github.com/aprakash16/CS598DL4H_Team_18/blob/main/related_code/requirements.txt).
 ```
 $ pip3 install -r related_code/requirements.txt
 ```
