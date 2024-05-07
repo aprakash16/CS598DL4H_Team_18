@@ -99,10 +99,10 @@ Load data...
 
 We were able to reproduce the ODE+RNN+Attention model (using full version of MIMIC-III dataset) and got results similar to the orignal paper with the following results on local setup:
 
-Average Precision: 0.311 [0.304,0.319]
-AUROC (Area Under the Receiver Operating Characteristic Curve):	0.74 [0.738,0.743]
-F1 Score: 0.363 [0.358,0.368]
-PPV (Positive Predictive Value): 0.983 [0.967,1.0]
-NPV (Negative Predictive Value): 0.882 [0.881,0.884]
-Sensitivity: 0.719 [0.711,0.728]
-Specificity: 0.66 [0.652,0.669]
+* Average Precision: 0.311 [0.304,0.319]
+* AUROC (Area Under the Receiver Operating Characteristic Curve):	0.74 [0.738,0.743]
+* F1 Score: 0.363 [0.358,0.368]
+* PPV (Positive Predictive Value): 0.983 [0.967,1.0]
+* NPV (Negative Predictive Value): 0.882 [0.881,0.884]
+* Sensitivity: 0.719 [0.711,0.728]
+* Specificity: 0.66 [0.652,0.669]
