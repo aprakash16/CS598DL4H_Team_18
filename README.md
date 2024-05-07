@@ -2,11 +2,10 @@
 
 ## Introduction
 
-The study is based on the paper Barbieri, S., Kemp, J., Perez-Concha, O. et al. “Benchmarking Deep Learning Architectures for Predicting Readmission to the ICU and Describing Patients-at-Risk”, Sci Rep 10, 1111 (2020) https://doi.org/10.1038/s41598-020-58053-z. The original authors have provided the code [here] (https://github.com/sebbarb/time_aware_attention/tree/master). We will use the existing code of the original authors so that, there are minimum side effects. Our plan includes to add two ablations mentioned in Scope of Reproducibility section.
+The study is based on the paper Barbieri, S., Kemp, J., Perez-Concha, O. et al. “Benchmarking Deep Learning Architectures for Predicting Readmission to the ICU and Describing Patients-at-Risk”, Sci Rep 10, 1111 (2020) https://doi.org/10.1038/s41598-020-58053-z. The original authors have provided the code [here] (https://github.com/sebbarb/time_aware_attention/tree/master). We will use the existing code of the original authors so that, there are minimum side effects. Our plan includes adding two ablations mentioned in the Scope of Reproducibility section.
 
-If you want to find out more about our reproduction study, please checkout the following:
-1. Presentation: 
-2. Final Report: 
+1. Presentation: https://mediaspace.illinois.edu/media/t/1_a6sxiq4q
+2. Final Report: https://github.com/aprakash16/CS598DL4H_Team_18/blob/main/DL4H_Team_18.ipynb
 
 ## Scope of Reproducibility
 
@@ -40,7 +39,7 @@ root@...# cd /workspace
 
 ## Data
 
-[MIMIC-III Clinical Database 1.4](https://physionet.org/content/mimiciii/1.4/) will be used. It is available in [PhysioNet](https://physionet.org/). For accessing the data, a request needs to be raised. Once the data is available, place the datasets in "mimic-iii-clinical-database-1.4" folder at the root of the repository. Please note, you will need to unzip those files as most of them would be downloaded in .gz file format. Due to health data license and privacy concern, this dataset has not been directly placed in the public repository.
+[MIMIC-III Clinical Database 1.4](https://physionet.org/content/mimiciii/1.4/) will be used. It is available in [PhysioNet](https://physionet.org/). For accessing the data, a request needs to be raised. Once the data is available, place the datasets in "mimic-iii-clinical-database-1.4" folder at the root of the repository. Please note, you will need to unzip those files as most of them would be downloaded in .gz file format. Due to health data license and privacy concerns, this dataset has not been directly placed in the public repository.
 
 ## Preprocessing
 
@@ -97,7 +96,7 @@ Load data...
 ```
 ## Result
 
-We were able to reproduce the ODE+RNN+Attention model (using full version of MIMIC-III dataset) and got results similar to the orignal paper with the following results on local setup:
+We were able to reproduce the ODE+RNN+Attention model (using the full version of MIMIC-III dataset) and got results similar to the orignal paper with the following results on local setup:
 
 * Average Precision: 0.311 [0.304,0.319]
 * AUROC (Area Under the Receiver Operating Characteristic Curve):	0.74 [0.738,0.743]
