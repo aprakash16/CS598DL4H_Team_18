@@ -5,8 +5,7 @@
 The study is based on the paper Barbieri, S., Kemp, J., Perez-Concha, O. et al. “Benchmarking Deep Learning Architectures for Predicting Readmission to the ICU and Describing Patients-at-Risk”, Sci Rep 10, 1111 (2020) https://doi.org/10.1038/s41598-020-58053-z. The original authors have provided the code [here] (https://github.com/sebbarb/time_aware_attention/tree/master). We will use the existing code of the original authors so that, there are minimum side effects. Our plan includes to add two ablations mentioned in Scope of Reproducibility section.
 
 If you want to find out more about our reproduction study, please checkout the following:
-1. Presentation: https://uofi.box.com/s/zrpprtxedxl0mi4kshwdu1webz1x7d56
-2. Final Report:https://raw.githubusercontent.com/shirleyli2015/CS-598-DLH-Final-Project/master/CS-598-DLH-Final-Project-Report.pdf
+
 
 # Scope of Reproducibility
 
